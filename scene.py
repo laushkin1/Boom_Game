@@ -116,10 +116,9 @@ class Level1(BaseScene):
 
         self.obstacle_group = pygame.sprite.Group()
 
-        self.difficult = 1000
+        self.difficult = 700
         self.obstacle_timer = pygame.USEREVENT + 1
         pygame.time.set_timer(self.obstacle_timer, self.difficult)
- 
 
         
         # Background
@@ -142,7 +141,7 @@ class Level1(BaseScene):
                     if self.player.sprite.rect.collidepoint(event.pos):
                         self.player.sprite.gravity = -20
                         self.player.sprite.play_jump_sound()
-
+                        
             if event.type == self.obstacle_timer:
                 self.obstacle_group.add(Obstacle(randint(0, 3)))
 
@@ -195,14 +194,6 @@ class Level1(BaseScene):
             
     
 
-        keys = pygame.key.get_pressed()
-        if keys[pygame.K_e]:
-            if self.player:
-                self.player.sprite.new_game()
-            self.set_score(score)
-            self.gameStateManager.set_state('menu')
-
-
     def set_player(self, player):
         self.player = player
 
@@ -233,7 +224,7 @@ class Level2(BaseScene):
         self.backroom_walls = pygame.image.load('data/background/backroom_walls.png').convert_alpha()
         self.screamer_bg = pygame.image.load('data/background/screamer.png')
 
-        self.screamer_timer = pygame.USEREVENT + 1
+        self.screamer_timer = pygame.USEREVENT + 2
         pygame.time.set_timer(self.screamer_timer, 5000)
         self.screamer = False
  
