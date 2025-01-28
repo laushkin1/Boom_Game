@@ -29,7 +29,13 @@ Before you run the game, make sure that the `data` directory is located on the s
 
 `s + space` - Small jump
 
-(you can also jump by clicking the mouse on the character)
+
+# Tips
+You can also jump by clicking the mouse on the character
+
+
+# Screenshots
+![game](data/screenshot.png)
 
 
 ## Author
