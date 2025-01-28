@@ -20,10 +20,15 @@ Before you run the game, make sure that the `data` directory is located on the s
 
 ## Comands
 `a` - Move left
+
 `d` - Move right
+
 `space` - Jump
+
 `w + space` - Super jump
+
 `s + space` - Small jump
+
 (you can also jump by clicking the mouse on the character)
 
 
