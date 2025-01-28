@@ -18,7 +18,7 @@ class Game:
 
        
 
-        self.gameStateManager = GameStateManager('menu') # menu
+        self.gameStateManager = GameStateManager('menu')
         self.menu = Menu(self.screen, self.gameStateManager)
         self.level1 = Level1(self.screen, self.gameStateManager)
         self.level2 = Level2(self.screen, self.gameStateManager)
